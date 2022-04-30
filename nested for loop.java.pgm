@@ -1,0 +1,10 @@
+public class Main {
+  public static void main(String[] args) {
+    int team_no=1;
+    for (team_no=1; team_no<=3; team_no++) {
+    int student=1;
+    for (student=1; student<=5; student++)
+    System.out.println("team_no" + team_no + " " + "student" + student);
+    }  
+  }
+}
