@@ -1,0 +1,20 @@
+public class Main {
+  public static void main(String[] args) 
+  {
+  //electricity bill;
+  int a=(250); //amount of unit current.
+  if (a<=100) 
+  {
+   System.out.println("you not paid money");//electricity bill is free.
+  } 
+  else if (a<=200) 
+  {
+   System.out.println("your pay amount is:" + a*2);//To one unit current,you should pay 2rupees.
+  } 
+  else 
+  {
+   System.out.println("your pay amount is:" + a*5);//to one u it current,you should pay 5rupees. 
+  }
+  
+  }
+}
