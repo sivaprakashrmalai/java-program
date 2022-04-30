@@ -1,0 +1,10 @@
+public class Main {
+  public static void main(String[] args) {
+    String MI_team[]={"rohit","bumrah","polard","suryakumar","arjun tendulkar","sanjay yadav","de_cock","hrithik"};
+    System.out.println("MI_TEAM PLAYERS ARE:");
+    for(String i:MI_team) {
+    System.out.println(i);
+    }
+    
+  }
+}
