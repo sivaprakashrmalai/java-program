@@ -1,0 +1,8 @@
+public class Main {
+  public static void main(String[] args) {
+    int b=20;//b is a breath of the triangle:
+    int h=20;//h is aheight of the triangle:
+    int area_of_triangle=((b*h)*1/2);//area of triangle formula is ((b*h)*1/2):
+    System.out.println("the area_of_triangle is:" + area_of_triangle);
+  }
+}
