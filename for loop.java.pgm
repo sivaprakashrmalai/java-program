@@ -1,0 +1,9 @@
+public class Main {
+  public static void main(String[] args) {
+    int a=4;
+    System.out.println("the odd number from 0 to 50 is given below:");
+    for (a=0; a<=50; a=a+2) {
+    System.out.println(a);
+    }
+  }
+}
