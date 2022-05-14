@@ -1,0 +1,26 @@
+public class Main {
+  public static void main (String[] args) {
+  String[] a ={"dhoni","jadeja","concaw","ruturaj","dube","moeen ali","mukesh","uthappa","rayudu","bravo","char"} ;
+  System.out.println("the CSK tem player names are below"); 
+  for (String i:a) {
+  System.out.println(i); 
+  }
+  System.out.println(a[0] + " CSK team captain and also good keeper");
+  
+  System.out.println(a[1] + " is a best bowler and also good batsman" );
+  
+  System.out.println(a[3] + " is a opener batsman" );
+  
+  System.out.println(a[6] + " is a best bowler" );
+  
+  System.out.println(a[7] + " is a best bats man" );
+  
+  System.out.println(a[8] + " is a best batsman and also good fielder");
+  
+  System.out.println(a[9] + " is a best bowler and also super dancer" );
+  
+  System.out.println(a[10] + " is a opener bowler");
+  
+  System.out.println("the length of the list is:" + a.length );
+  }
+ } 
