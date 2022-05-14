@@ -1,0 +1,16 @@
+public class Main {
+  public static void main (String[] args) {
+    int i = 0;
+    System.out.println("these numbers are 0 to 200, === indicates divisible by six numbers");
+    for (i=0; i<=200; i++) {
+      if (i%6==0) {
+      System.out.println("===");
+      continue;
+      
+      }
+      System.out.println(i);
+    }
+    
+    
+  }
+}
