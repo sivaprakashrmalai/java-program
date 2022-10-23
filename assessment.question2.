@@ -1,0 +1,17 @@
+public class Testoverload {
+    public static void main(String args[]){
+        sayHello();       //method calling without parameters:
+        sayHello("HELLO:");     //method calling with parameters:
+
+    }
+
+public static void sayHello(){   //creating a method without parameter: 
+    System.out.println("HELLO GHF: ");
+    
+}
+public static void sayHello(String a){    //creating a method with parameter:
+     
+    System.out.println(a);
+
+}
+}
