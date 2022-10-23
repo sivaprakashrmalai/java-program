@@ -1,0 +1,50 @@
+public class Test3{
+    public static void main (String args[]){
+        Dog obj1=new Dog(10000);   //object creation for the super_class:
+
+        Labrador obj2=new Labrador(20000);    //object creation for the derived class:
+
+    }
+}
+class Dog {       //this is a super_class:
+    int cost;     //instance variable:
+    Dog(){      //default constructor for the super_class
+
+    }
+    Dog(int cost){        //parameterized constructor for the super_class:
+        this.aboutDog();     //invoking the method1 by using this keyword in the constructor:
+        this.dogDetails(cost);     //invoking the method2 by using this keyword in the constructor:
+
+    }
+    void aboutDog(){        //creation of method1:
+        System.out.println("------------------DOG-------------------");
+        System.out.println("DOG IS A ANIMAL :");
+        System.out.println("DOG IS A PET ANIMAL :");
+        System.out.println("DOG IS ALSO A GOOD FRIEND TO THE HUMAN:");
+    }
+    void dogDetails(int cost){     //creation of method2:
+    
+        System.out.println("THE COST OF ONE DOG IN INDIA :"+cost);
+    }
+
+}
+class Labrador extends Dog{             //this is a sub_class:
+    
+    Labrador(int cost){            //parameterized constructor for the sub_class:
+        this.aboutDog();           //invoking the method1 by using this keyword in the constructor:
+
+        this.dogDetails(cost);       //invoking the method2 by using this keyword in the constructor:
+
+    }
+    //@override:
+    void aboutDog(){             //creation of method1
+        System.out.println("------------------LABRADOR DOG------------------");
+        System.out.println("THE LABRADOR DOG IS A GUARD DOG :");
+        System.out.println("WE WILL SHOULD TRAIN TO A LABRADOR DOG UNTILL 8 TO 12 WEEKS");
+    }
+    //@override:
+    void dogDetails(int cost){    //creation of method2
+        System.out.println("THE COST OF THE ONE LABRADOR DOG IN INDIA :"+cost);
+
+    }
+}
