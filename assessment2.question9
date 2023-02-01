@@ -1,0 +1,29 @@
+/*
+    instance variable:
+                   * they are defined in class but outside the body of methods:
+                   * these variables are created when an object is instantiated and are accessible to all constructors,methods, or block in class:
+                   * it includes access modifiers such as private, public, protected, etc.,
+                   * it is not compulsary to initialize instance variables before  use.
+                   
+    local variable:
+                   * they are defined within the methods:
+                   * these variables are created when an method or constructor is started and these variable are destroyed once it exit the method block:
+                   * it doesn't include access modifiers such as private,public,protected etc.,
+                   * it is important to initialize local varialbles before use.
+*/
+public class Variable {
+    public static void main(String[] args){
+        String name=("siva");        // name is the instance variable:
+        System.out.println("Hii, I am " + name);
+        deTail();
+            
+        
+
+}
+   static void deTail(){
+        int roll_no= 07;   // roll_no is the local variable:
+        int mark = 500;    // mark is the local variable:
+        System.out.println("my roll_no is: "+roll_no);
+        System.out.println("my mark is: "+mark);
+    }
+}
