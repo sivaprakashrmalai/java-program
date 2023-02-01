@@ -1,0 +1,41 @@
+public class test6 {
+public static void main(String args[]){
+
+     Vehicle a1 = new Vehicle();                   //object creation for super class:
+     a1.display("VEHICLE");
+     Fourwheel a2 = new Fourwheel();                //object creation for Fourwheel is subclass of Vehicle and super class of TATA:
+     a2.display("CAR");
+     TATA a3 = new TATA("TATA", 1947, 100000, 8);     //object creation for TATA class i.e subclass of four wheel: 
+
+    }    
+}
+class Vehicle{   //this is the super class of four wheel:
+    void display(String name){
+    
+        System.out.println(name+"are costly product:");
+    }
+ }   
+ class Fourwheel extends Vehicle{    // this is super class of tata and subclass of vehicle:
+    void display(String name){
+        
+        System.out.println(name+"wheels are highest marketing place in the world:");
+    }
+}
+class TATA extends Fourwheel{
+    String name;
+    int year;
+    int cost;
+    int no_of_seat;
+    TATA(String name,int year,int cost,int no_of_seat){       //creation of parameterized constructor:
+        this.aboutTata(name, year, cost, no_of_seat);      //invoking the method by using this keyword into the constructor:
+    }
+    void aboutTata(String name,int year,int cost,int no_of_seat){    //creation of method for the subclass1 from the fourwheel subclass:
+        System.out.println("------------------TATA CAR------------------");
+          System.out.println("the name of the car is: "+name);
+          System.out.println("it was made in: "+year);
+          System.out.println("the cost of the car is: "+cost);
+          System.out.println("no_of_seats in the car: "+no_of_seat);
+   }
+
+
+}
