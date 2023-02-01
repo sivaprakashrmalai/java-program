@@ -1,0 +1,49 @@
+ /*  6) The output for the following code is given below:
+ 
+ * displaying from superclass:
+ * printing from subclass:
+ 
+ (*because in the main class the construction is created for the subclass: 
+ so during execution first the program will go to the main function.
+ then next going to the subclass.
+ then print the displayResult method of subclass.
+ nextline we have to invoke the method of superclass.
+ then  will go to the superclass ,then print the statement. finally the program will successfully executed.)
+ */
+
+
+
+public class Main {
+    public static void main(String args[]){
+        Subclass a1 = new Subclass();
+        a1.displayResult();
+    }
+}
+class Superclass{
+    void displayResult(){
+        System.out.println("printing from superclass:");
+    }
+}
+class Subclass extends Superclass{
+    void displayResult(){
+        System.out.println("displaying from subclass:");
+        super.displayResult();
+    }
+}
+
+
+
+
+/*
+    7) What are the four main principles of OOPS concept?
+     
+     * abstraction
+     * inheritance
+     * encapsulation
+     * polymorphism
+     
+*/
+
+
+
+
