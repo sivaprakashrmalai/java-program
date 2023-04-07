@@ -22,6 +22,7 @@ class CreateBankFeature{
         amount1=obj.nextInt();
         balance = balance+amount1;
         previous_transaction = amount1;
+        System.out.println("you have successfully deposited");
         System.out.println("===============================================================================================");
         System.out.println("\n");
     }
@@ -31,7 +32,7 @@ class CreateBankFeature{
         amount2=obj.nextInt();
         balance = balance-amount2;
         previous_transaction = amount2;
-        
+        System.out.println("you have successfully withdrawn");
         System.out.println("===============================================================================================");
         System.out.println("\n");
     }
@@ -79,10 +80,10 @@ class CreateBankFeature{
       System.out.println("\n");
       System.out.println("WELCOME SIR...!!");
       System.out.println("option1: deposit");
-      System.out.println("option1: withdraw");
-      System.out.println("option1: checkbalance");
-      System.out.println("option1: previous_transaction");
-      System.out.println("option1: EXIT");
+      System.out.println("option2: withdraw");
+      System.out.println("option3: checkbalance");
+      System.out.println("option4: previous_transaction");
+      System.out.println("option5: EXIT");
       System.out.println("\n");
       System.out.println("================================================================");
       
